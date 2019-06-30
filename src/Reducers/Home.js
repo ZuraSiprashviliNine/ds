@@ -1,12 +1,12 @@
 
 const reducer = (state = {
-    pages: [],
+    users: []
 }, action) => {
-    switch (action.type){
-        case 'INIT:PAGES:NAVIGATION': {
+    switch(action.type){
+        case 'INIT:USERS:HOME_FULFILLED': {
             state = {
                 ...state,
-                pages: action.payload
+                users: action.payload
             };
             break;
         }
@@ -16,6 +16,6 @@ const reducer = (state = {
     }
 
     return state;
-}
+};
 
 export default reducer;

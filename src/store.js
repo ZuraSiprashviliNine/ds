@@ -10,10 +10,14 @@ import Logger from 'redux-logger';
 import {createPromise} from 'redux-promise-middleware';
 
 import Navigation from './Reducers/Navigation';
+import Home from './Reducers/Home';
+import Steps from './Reducers/Steps';
 
 export default createStore(
     combineReducers({
-        Navigation
+        Navigation,
+        Home,
+        Steps
     }),
     {},
     applyMiddleware(

@@ -10,6 +10,7 @@ import App from './Containers/App';
 
 import './styles/bootstrap.min.css';
 import 'normalize.css';
+
 import './styles/style.scss';
 
 reactDOM.render(
